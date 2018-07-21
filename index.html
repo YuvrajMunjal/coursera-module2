@@ -1,104 +1,116 @@
 <html>
 <head>
-<title>Coursera Module 2 Assignment week 2</title>
-<style>
-*{
- box-sizing: border-box;
-  margin-right: 1px;
-  margin-left:1px;}
-
-
-p {
-  width: 46%;
-  border: 5px solid black;
-  float: left;
-  margin-right: 50px
+	<title>Module 2 exercise</title>
+	<meta charset="utf-8">
+<style type="text/css">
+	* {
+	box-sizing: border-box;
 }
 
-#p1 {
- background-color: dodgerblue;
-}
-#p2 {
-  background-color: dodgerblue;
-  margin-right: 1PX
-}
-#arrr{
-color: dodgerblue;
-
+html {
+	font-family: "comic sans ms", arial, "sans-serif";
 }
 
-#arrr2{
-color: dodgerblue;
-
+h1 {
+	text-align: center;
+	font-size: 170%;
 }
 
-#bluered{ 
-color: dodgerblue;
-text-align: center;
+.menu {
+	background-color: rgb(225, 225, 225);
+    border: 2px solid black;
+	position: relative;
 
+	/*margin: 5px;
+	padding: 30px 5px 5px 5px;*/
 }
 
-
-/* Large devices only */
-@media (min-width: 1200px) {
-   p{
-  width: 46%;
-  border: 2.5px solid black}
-  body{
-    background-color: black;
-  }
+.menu-heading {
+	border-bottom: 2px solid;
+	border-left: 2px solid;
+	width: 100px;
+	text-align: center;
+	font-size: 110%;
+	position: absolute;
+	right: 0;
+	margin: 0px;	
 }
 
-
-/******Medium devices only ******/
-@media (min-width: 992px) and (max-width: 1200px) {
-  p{
-  width: 46%;
-  border: 2.5px solid black;
-  }
-  
-  body {
-    background-color: yellow;
-  }
+.menu-1 {
+	background-color: rgb(204, 255, 255);
 }
 
-/*Small devices only*/
-@media(min-width:10px) (max-width:992px)
-{
-  p{
-   width: 46%;
-  border: 5px solid black;
-    
-  }
-  body {
-    background-color: black;
-  }
+.menu-2 {
+	background-color: rgb(204, 255, 204);
 }
 
+.menu-3 {
+	background-color: rgb(255, 255, 204);
+}
 
+.menu-text {
+	margin-top: 30px;
+	padding-left: 10px;
+	padding-right: 5px;
+}
+
+/*Large screen */
+@media (min-width: 992px) {
+	.col-4 {
+		float: left;
+		margin-right: 2%;		
+	}
+	.col-4 {
+		width: 31%;
+	}
+}
+
+/*Small screen*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-6, .col-12 {
+		float: left;
+		margin-right: 2%;
+		margin-bottom: 2%;
+	}
+	.col-6 {
+		width: 48%;
+	}
+	.col-12 {
+		width: 98%;
+	}
+	
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+	.col-sm-12 {
+		float: left;
+		margin-right: 2%;
+		margin-bottom: 2%;
+	}
+	.col-sm-12 {
+		width: 98%;
+	}	
+}
 </style>
+
 </head>
 <body>
-
-<h1 id="bluered">Our Menu</h1>
-
-
-<h1 id="arrr">Sushi</h1>
-  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione onsectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non,earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
-  <h1 id="arrr2">Chow Mein</h1>
-  <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione onsectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non,earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita</p>
-
-  <h1 id="arrr">Fried Rice</h1>
-  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione onsectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non,earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
-  <h1 id="arrr2">Burger</h1>
-  <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione onsectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non,earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita</p>
-  <h1 id="arrr">Salad</h1>
-  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione onsectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non,earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
-  <h1 id="arrr2">Pizza</h1>
-  <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione onsectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non,earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita</p>
-
-
-
+	<h1>Our menu</h1>
+	<div>
+		<div class="menu col-4 col-6 col-12">
+			<p class="menu-heading menu-1">Sushi</p>
+			<p class="menu-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		</div>
+		<div class="menu col-4 co-l6 col-12">
+			<p class="menu-heading menu-2">Pizza</p>
+			<p class="menu-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enexen  nbdjf d drcitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		</div>
+		<div class="menu col-4 col-12 col-12">
+			<p class="menu-heading menu-3">Burger</p>
+			<p class="menu-text">lorem ipsum dolor sit d amet, consecteturd d  adipiscing elit, sed do eiusmod te Ut enim ad d d  minim veniam,bore et dolore  Ut enim ad mi e e nim veniam, ad minim d d  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquipd  ex ea commodo consequat.</p> 
+		</div>
+	<div>
 
 </body>
 </html>
